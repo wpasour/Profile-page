@@ -1,0 +1,39 @@
+body{
+    background-color: lightblue;
+}
+h1 {
+    text-align: center;
+}
+
+h1:hover {
+    transition: 0.5s;
+    transition-timing-function: linear;
+    text-shadow: rgb(58, 156, 255) 0px 0px 5px;
+}
+.container {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 8fr 2fr;
+    grid-template-rows: 1fr 6fr;
+    grid-template-areas: 
+        "header header"
+        "main aside";
+}
+
+header {
+    grid-area: header;
+    background-color: rgb(250, 213, 145);
+}
+
+main {
+    grid-area: main;
+    background-color: lightcyan;
+}
+
+aside {
+    grid-area: aside;
+    background-color: rgb(136, 254, 254);
+}
+h2 {
+    justify-content: center;
+}
